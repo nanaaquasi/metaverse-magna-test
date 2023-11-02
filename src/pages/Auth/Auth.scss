@@ -1,0 +1,107 @@
+.auth {
+  .auth-wrapper {
+    display: flex;
+
+    padding-left: 28rem;
+    gap: 20rem;
+    margin-top: 3rem;
+
+    .nav-button {
+      display: flex;
+      align-self: flex-start;
+      align-items: center;
+
+      a {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .form-footer {
+    p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: -0.14px;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .main-content {
+    margin-top: 2rem;
+    &__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &--title {
+        color: #181818;
+
+        text-align: center;
+        font-family: Inter;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 48px; /* 150% */
+        letter-spacing: -0.32px;
+      }
+
+      &--description {
+        width: 44rem;
+        color: #181818;
+
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 30px; /* 187.5% */
+        letter-spacing: -0.16px;
+
+        margin-top: 1.7rem;
+      }
+    }
+
+    &__form {
+      margin-top: 4.8rem;
+
+      .error-message {
+        color: var(--red-600, #e11d48);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.14px;
+      }
+    }
+
+    &__footer {
+      margin-top: 12.6rem;
+
+      p {
+        color: var(--grey-600, #6a6a6a);
+        text-align: center;
+        font-family: Space Grotesk;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+
+        a {
+          color: var(--purple-600, #8311f9);
+          font-family: Space Grotesk;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 20px;
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}
