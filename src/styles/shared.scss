@@ -18,6 +18,8 @@
   line-height: 24px;
   letter-spacing: -0.16px;
   font-size: 1.6rem;
+
+  cursor: pointer;
 }
 
 .button--secondary {
@@ -25,11 +27,13 @@
   background: transparent;
   border: 1px solid var(--grey-300, #d6d6d6);
   font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
 }
 
 .button--primary {
   color: #fff;
   background: var(--purple-600, #8311f9);
+  cursor: pointer;
 
   &--alt {
     color: #fff;
@@ -39,6 +43,21 @@
     height: 69.176px;
     font-weight: 600;
     line-height: 32px;
+  }
+}
+
+.button--tertiary {
+  color: #fff;
+  background: #181818;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+  cursor: pointer;
+
+  &--disabled {
+    background: #d6d6d6;
   }
 }
 
@@ -65,4 +84,303 @@
 
 .align-center {
   align-items: center;
+}
+
+.floating-button {
+  outline: none;
+  border: none;
+
+  position: fixed;
+  width: 6rem;
+  height: 6rem;
+  bottom: 15rem;
+  right: 12rem;
+  background-color: #cf94ff;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+
+  cursor: pointer;
+}
+
+.post-card {
+  display: flex;
+  gap: 2.8rem;
+
+  &__image {
+    display: flex;
+    min-width: 28rem;
+    height: 18rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.6rem;
+    overflow: hidden;
+
+    &.pulse {
+      background-color: #f0efeccb;
+      width: 28rem;
+      height: 18rem;
+      animation: pulse 1s infinite;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      overflow: hidden;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    &--category {
+      text-transform: uppercase;
+
+      p {
+        color: #6a6a6a;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 20px; /* 142.857% */
+        letter-spacing: -0.14px;
+
+        &.pulse {
+          background-color: #f0efeccb;
+          width: 30rem;
+          height: 5rem;
+          animation: pulse 1s infinite;
+        }
+      }
+    }
+
+    &--title {
+      h2 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 36px; /* 150% */
+        letter-spacing: -0.24px;
+
+        &.pulse {
+          background-color: #f0efeccb;
+          width: 30rem;
+          height: 5rem;
+          animation: pulse 1s infinite;
+        }
+      }
+    }
+
+    &--description {
+      p {
+        color: #6a6a6a;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.16px;
+
+        &.pulse {
+          background-color: #f0efeccb;
+          width: 30rem;
+          height: 5rem;
+          animation: pulse 1s infinite;
+        }
+      }
+    }
+
+    &--author {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-top: 0.4rem;
+      font-weight: 300;
+
+      &.pulse {
+        background-color: #f0efeccb;
+        width: 30rem;
+        height: 5rem;
+        animation: pulse 1s infinite;
+      }
+
+      &-name {
+        p {
+          color: #6a6a6a;
+
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+
+          &.pulse {
+            background-color: #f0efeccb;
+            width: 30rem;
+            height: 5rem;
+            animation: pulse 1s infinite;
+          }
+        }
+      }
+
+      &-seperator {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #181818;
+      }
+    }
+  }
+
+  &.pulse {
+    background-color: #f0efeccb;
+    width: 8rem;
+    height: 2rem;
+    animation: pulse 1s infinite;
+  }
+}
+
+.category-card {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #c7c4bc;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: -0.14px;
+
+  cursor: pointer;
+
+  &.active {
+    background-color: #8311f9;
+    color: #fff;
+    border: none;
+  }
+
+  &.pulse {
+    background-color: #f0efeccb;
+    width: 8rem;
+    height: 2rem;
+    animation: pulse 1s infinite;
+  }
+}
+
+.stream-card {
+  display: flex;
+  gap: 2.8rem;
+  cursor: pointer;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    transition: all 0.2s ease-in-out;
+
+    &--title {
+      h2 {
+        color: #000;
+
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 125% */
+        letter-spacing: -0.16px;
+        text-transform: uppercase;
+      }
+    }
+
+    &--description {
+      p {
+        color: var(--grey-600, #6a6a6a);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.16px;
+      }
+    }
+
+    &--author {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      text-transform: uppercase;
+      font-size: 11px;
+      margin-top: 0.4rem;
+      font-weight: 300;
+
+      &-name {
+        p {
+          color: #6a6a6a;
+
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+        }
+      }
+
+      &-seperator {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: #181818;
+      }
+    }
+  }
+}
+
+.heading-1 {
+  color: var(--grey-900, #181818);
+  /* Heading/28px */
+  font-family: Space Grotesk;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.heading-2 {
+  color: var(--grey-900, #181818);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 150% */
+  letter-spacing: -0.24px;
+}
+
+.p-body {
+  color: var(--grey-600, #6a6a6a);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.16px;
+}
+
+// keyframe pulse animation:
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
