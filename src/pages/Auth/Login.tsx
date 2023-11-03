@@ -16,7 +16,6 @@ const Login = () => {
   const [password, setPassword] = React.useState("");
   const [isSubmitting, setIsSubmitting] = React.useState(false);
 
-  //   check form values if valid
   React.useEffect(() => {
     if (email && password) {
       setIsFormValidated(true);
@@ -45,7 +44,7 @@ const Login = () => {
         window.location.reload();
       }
     } catch (error) {
-      alert("Invalid credentials, please try again.");
+      alert(error.response.data.message);
       setIsSubmitting(false);
     }
   };
