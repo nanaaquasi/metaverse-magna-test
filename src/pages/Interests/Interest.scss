@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .interests-page {
   .interests-page__wrapper {
     display: flex;
@@ -5,6 +7,14 @@
     padding-left: 28rem;
     gap: 10rem;
     margin-top: 3rem;
+
+    @include media("<=tablet") {
+      padding: 0 1rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+      margin-top: 1rem;
+    }
 
     .nav-button {
       display: flex;
@@ -47,6 +57,10 @@
         width: 57.2rem;
         margin-top: 1.8rem;
 
+        @include media("<=tablet") {
+          width: 100%;
+        }
+
         h1 {
           color: var(--grey-900, #181818);
           text-align: center;
@@ -75,6 +89,12 @@
         padding-bottom: 1rem;
         margin-top: 4rem;
 
+        @include media("<=tablet") {
+          max-width: 100%;
+          max-height: 100%;
+          margin-top: 2rem;
+        }
+
         &-list {
           padding: 0 2rem;
           display: flex;
@@ -83,6 +103,13 @@
           flex-wrap: wrap;
           gap: 2rem;
           margin-top: 2.4rem;
+
+          @include media("<=tablet") {
+            gap: 1rem;
+            padding: 0;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
         }
       }
     }
@@ -93,6 +120,11 @@
 
     &__footer {
       margin-top: 1.8rem;
+
+      @include media("<=tablet") {
+        margin-bottom: 2rem;
+      }
+
       p {
         color: #565656;
         font-family: Inter;

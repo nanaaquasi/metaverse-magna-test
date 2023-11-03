@@ -1,3 +1,5 @@
+@import "../../styles/mixins.scss";
+
 .auth {
   .auth-wrapper {
     display: flex;
@@ -5,6 +7,14 @@
     padding-left: 28rem;
     gap: 20rem;
     margin-top: 3rem;
+
+    @include media("<=tablet") {
+      padding: 0 1rem;
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+      margin-top: 1rem;
+    }
 
     .nav-button {
       display: flex;
@@ -49,6 +59,11 @@
         font-weight: 600;
         line-height: 48px;
         letter-spacing: -0.32px;
+
+        @include media("<=tablet") {
+          font-size: 24px;
+          line-height: 36px;
+        }
       }
 
       &--description {
@@ -64,6 +79,11 @@
         letter-spacing: -0.16px;
 
         margin-top: 1.7rem;
+
+        @include media("<=tablet") {
+          width: 100%;
+          margin-top: 0.5rem;
+        }
       }
     }
 

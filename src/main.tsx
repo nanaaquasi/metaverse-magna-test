@@ -9,7 +9,7 @@ import InterestPage from "./pages/Interests/InterestPage.tsx";
 import Dashboard from "./pages/Dashboard/Dashboard.tsx";
 import ProtectedRoute from "./components/shared/ProtectedRoute.tsx";
 import jwtService from "./services/jwt.service.ts";
-
+import "./App.scss";
 const token = jwtService.getItem("token");
 
 const isAuth = token ? true : false;
