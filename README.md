@@ -24,8 +24,3 @@ yarn && yarn dev
 
 This runs the `dev` script specified in our `package.json`, and will spawn off a vite server which reloads the page as we save our files.
 Typically the server should be automatically opened for you.
-
-```
-
-
-```
