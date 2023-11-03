@@ -47,7 +47,7 @@
         font-size: 32px;
         font-style: normal;
         font-weight: 600;
-        line-height: 48px; /* 150% */
+        line-height: 48px;
         letter-spacing: -0.32px;
       }
 
@@ -60,7 +60,7 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 300;
-        line-height: 30px; /* 187.5% */
+        line-height: 30px;
         letter-spacing: -0.16px;
 
         margin-top: 1.7rem;
@@ -84,7 +84,7 @@
       margin-top: 12.6rem;
 
       p {
-        color: var(--grey-600, #6a6a6a);
+        color: #6a6a6a;
         text-align: center;
         font-family: Space Grotesk;
         font-size: 14px;
@@ -93,7 +93,7 @@
         line-height: 20px;
 
         a {
-          color: var(--purple-600, #8311f9);
+          color: #8311f9;
           font-family: Space Grotesk;
           font-size: 14px;
           font-style: normal;

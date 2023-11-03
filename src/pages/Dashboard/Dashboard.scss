@@ -72,8 +72,7 @@
 
   &__header {
     h1 {
-      color: var(--grey-900, #181818);
-      /* Heading/28px */
+      color: #181818;
       font-family: Space Grotesk;
       font-size: 28px;
       font-style: normal;
@@ -82,12 +81,12 @@
     }
 
     p {
-      color: var(--grey-600, #6a6a6a);
+      color: #6a6a6a;
       font-family: Inter;
       font-size: 16px;
       font-style: normal;
       font-weight: 300;
-      line-height: 24px; /* 150% */
+      line-height: 24px;
       letter-spacing: -0.16px;
     }
   }
@@ -130,7 +129,7 @@
         border-bottom: 1px solid #f8f8f8;
 
         li {
-          line-height: 24px; /* 150% */
+          line-height: 24px;
           letter-spacing: -0.16px;
           color: #6a6a6a;
           font-weight: 300;
@@ -157,7 +156,6 @@
 
 .sidebar-right {
   width: 34rem;
-  //   position: fixed;
   right: 0;
   top: 0;
   bottom: 0;
@@ -186,7 +184,7 @@
         border-bottom: 1px solid #f8f8f8;
 
         li {
-          line-height: 24px; /* 150% */
+          line-height: 24px;
           letter-spacing: -0.16px;
           color: #6a6a6a;
           font-weight: 300;

@@ -41,22 +41,22 @@
         h1 {
           font-size: 8rem;
           font-weight: 600;
-          line-height: 94px; /* 117.5% */
+          line-height: 94px;
           letter-spacing: -0.8px;
 
           span {
-            color: var(--purple-600, #8311f9);
+            color: #8311f9;
           }
         }
       }
 
       &__description {
         p {
-          color: var(--grey-900, #181818);
+          color: #181818;
           font-family: Inter;
           font-size: 24px;
           font-weight: 300;
-          line-height: 44px; /* 183.333% */
+          line-height: 44px;
           letter-spacing: -0.24px;
           margin-top: 2.4rem;
         }
@@ -96,11 +96,11 @@
           list-style: none;
           display: flex;
           gap: 4rem;
-          //   padding-bottom: 0.3rem;
+
           border-bottom: 1px solid #f8f8f8;
 
           li {
-            line-height: 24px; /* 150% */
+            line-height: 24px;
             letter-spacing: -0.16px;
             color: #6a6a6a;
             font-weight: 300;
@@ -131,7 +131,7 @@
       &--title {
         font-size: 3.2rem;
         font-weight: 600;
-        line-height: 44px; /* 137.5% */
+        line-height: 44px;
         letter-spacing: -0.32px;
       }
 
@@ -139,7 +139,7 @@
         color: #6a6a6a;
         font-size: 1.6rem;
         font-weight: 300;
-        line-height: 24px; /* 150% */
+        line-height: 24px;
         letter-spacing: -0.16px;
       }
 
