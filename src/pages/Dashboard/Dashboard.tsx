@@ -112,7 +112,7 @@ const Dashboard = () => {
       <div className="content-pane">
         <div className="content-pane__header">
           <h1>Top Picks</h1>
-          <p>Experience the best of Breach</p>
+          <p className="p-body">Experience the best of Breach</p>
         </div>
         <div className="content-pane__hero">
           <div className="content-pane__hero__image">

@@ -5,7 +5,7 @@ const FloatingButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleScroll = () => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 500) {
       setIsVisible(true);
     } else {
       setIsVisible(false);

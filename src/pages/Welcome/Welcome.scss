@@ -24,6 +24,33 @@
     position: relative;
     margin-top: 6rem;
 
+    &__message-bubble {
+      position: absolute;
+      top: 10rem;
+      left: -6rem;
+      display: flex;
+      width: 24.3rem;
+      padding: 8px 12px;
+      border-radius: 18px;
+      background: var(--purple-400, #a940ff);
+      text-align: start;
+
+      color: #fff;
+
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+
+      svg {
+        position: absolute;
+        bottom: 0;
+        right: -3px;
+      }
+
+      // z-index: 1;
+    }
+
     &__image {
       width: 27rem;
       height: 27rem;
